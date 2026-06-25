@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    width:300px;
+    height:150px;
+    border:20px dashed black;
+    padding:30px;
+    background-image:url("cofe1.jpeg");
+    background-repeat:no-repeat;
+}
+
+.box1{ background-origin:border-box; }
+.box2{ background-origin:padding-box; }
+.box3{ background-origin:content-box; }
+</style>
+</head>
+<body>
+    <div class="box1">border-box</div>
+    <br>
+    <div class="box2">padding-box</div>
+     <br>
+    <div class="box3">content-box</div>
+</body>
+</html>

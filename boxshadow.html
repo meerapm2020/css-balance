@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+    width:250px;
+    height:100px;
+    margin:30px;
+    background:skyblue;
+}
+
+/* Basic shadow */
+.box1{
+    box-shadow:10px 10px 5px gray;
+}
+
+/* Shadow with spread */
+.box2{
+    box-shadow:10px 10px 8px 5px gray;
+}
+
+/* Negative offset */
+.box3{
+    box-shadow:-10px -10px 8px gray;
+}
+
+/* No shadow */
+.box4{
+    box-shadow:none;
+    border:2px solid black;
+}
+
+/* Inset */
+.box5{
+    box-shadow:inset 10px 10px 15px gray;
+}
+
+/* Initial */
+.box6{
+    box-shadow:initial;
+    border:2px solid black;
+}
+
+/* Inherit */
+.parent{
+    box-shadow:8px 8px 12px gray;
+    padding:20px;
+}
+
+.child{
+    width:150px;
+    height:60px;
+    background:orange;
+    box-shadow:inherit;
+}
+</style>
+</head>
+<body>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+
+<div class="parent">
+    <div class="child"></div>
+</div>
+
+</body>
+</html>

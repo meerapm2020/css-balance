@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+    width:250px;
+    height:100px;
+    margin:20px;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    line-height:100px;
+    background:blue;
+}
+
+/* 1 Fully visible */
+.box1{
+    opacity:1;
+}
+
+/* 2 Semi transparent */
+.box2{
+    opacity:0.7;
+}
+
+/* 3 More transparent */
+.box3{
+    opacity:0.3;
+}
+
+/* 4 Invisible */
+.box4{
+    opacity:0;
+}
+
+/* 5 Initial */
+.box5{
+    opacity:initial;
+}
+
+/* 6 Parent + child inherit */
+.parent{
+    opacity:0.5;
+    background:red;
+}
+
+.child{
+    width:150px;
+    height:50px;
+    line-height:50px;
+    background:green;
+    opacity:inherit;
+}
+</style>
+</head>
+<body>
+
+<div class="box1">Opacity 1</div>
+<div class="box2">Opacity 0.7</div>
+<div class="box3">Opacity 0.3</div>
+<div class="box4">Opacity 0</div>
+<div class="box5">Initial</div>
+
+<div class="parent">
+    Parent
+    <div class="child">Child</div>
+</div>
+
+</body>
+</html>
