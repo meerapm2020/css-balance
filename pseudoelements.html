@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1::before{
+    content:"* ";
+}
+
+h1::after{
+    content:" *";
+}
+
+p::selection{
+    background:yellow;
+    color:red;
+}
+
+p::first-line{
+    color:blue;
+    font-weight:bold;
+}
+
+p::first-letter{
+    font-size:40px;
+    color:green;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome</h1>
+
+<p>
+CSS pseudo elements allow styling of specific parts of an element.
+They help add design without extra HTML tags.
+Try selecting this text with mouse.
+</p>
+
+</body>
+</html>
