@@ -2,28 +2,30 @@
 <html>
 <head>
 <style>
-h1::before{
-    content:"* ";
-}
 
-h1::after{
-    content:" *";
-}
+    h1::before{
+        content:"**";
+        color:red;
+    }
+    h1::after{
+        content:"**";
+        color:red;
+    }
 
-p::selection{
-    background:yellow;
-    color:red;
-}
+    p::selection{
+        background-color: yellow;
+        color:red;
+    }
+    P::first-line{
+        color: green;
+        font-weight: bold;
+    }
+    p::first-letter{
+        font-size: 80px;
+        color:blue;
+    }
 
-p::first-line{
-    color:blue;
-    font-weight:bold;
-}
 
-p::first-letter{
-    font-size:40px;
-    color:green;
-}
 </style>
 </head>
 <body>
@@ -31,6 +33,12 @@ p::first-letter{
 <h1>Welcome</h1>
 
 <p>
+CSS pseudo elements allow styling of specific parts of an element.
+They help add design without extra HTML tags.
+Try selecting this text with mouse.
+CSS pseudo elements allow styling of specific parts of an element.
+They help add design without extra HTML tags.
+Try selecting this text with mouse.
 CSS pseudo elements allow styling of specific parts of an element.
 They help add design without extra HTML tags.
 Try selecting this text with mouse.
